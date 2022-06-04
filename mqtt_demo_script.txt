@@ -1,0 +1,14 @@
+- Installer nodered et nodered dashboard installés sur la rarspberry
+- la communication entre la raspberry qui exécute nodered et l'arduino se fera à travers mqtt
+- mqtt permettera de publier et recevoir des messages autant que client 
+- Dashboard layout : au niveau de nodered sur la raspberry, au niveau du volet layout, on créé un tab Room et deux groupes Lamp et Sensor
+- Flow : mqtt output node permet de publier selon l'état du switch
+mqtt input nodes permettent de s'inscrire aux topics d'interet
+- pour connecter nodered au mqtt, dans mqtt out on met à jour l'@ du serveur localhost:1883
+- Deployer l'app
+- @ip/ui pour voir le dashboard
+
+
+coté arduino : 
+- installer PubSubClient 
+- utiliser le code et remplacer les credentials SSID et password du réseau + @du serveur mqtt
